@@ -38,9 +38,9 @@ impl_for_simple_enum!(
 impl_for_simple_enum!(WindowOrigin: Center, BottomLeft);
 impl_for_simple_enum!(
     ScalingMode: None,
-    WindowSize,
-    FixedVertical,
-    FixedHorizontal
+    WindowSize
+    // FixedVertical,
+    // FixedHorizontal
 );
 impl_for_simple_enum!(DepthCalculation: Distance, ZDifference);
 

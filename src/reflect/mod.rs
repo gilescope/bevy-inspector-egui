@@ -119,7 +119,11 @@ pub fn ui_for_reflect_with_registry(
         bevy::reflect::ReflectMut::Value(value) => {
             ui_for_reflect_value(value, ui, inspectable_registry)
         }
+        bevy::reflect::ReflectMut::Array(_) => {
+            false // TODO: Arrays
+        }
     }
+  
 }
 
 fn ui_for_reflect_struct(
